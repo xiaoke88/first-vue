@@ -7,8 +7,8 @@
     </p>
     <p>
       <!-- 使用指令 v-link 进行导航。 -->
-      <a v-link="{ path: '/bar' }">Go to Foo</a>
-      <a v-link="{ path: '/hello' }">Go to Bar</a>
+      <a v-link="{ path: '/bar' }">Go to bar</a>
+      <a v-link="{ path: '/kenko' }">Go to kenko</a>
     </p>
     <router-view></router-view>
     <p>

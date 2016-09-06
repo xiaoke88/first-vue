@@ -2,23 +2,15 @@ export default function (router) {
   router.map({
     '/': {
       name: 'home',
-      component: require('./components/Home/index.vue')
+      component: require('./components/Hello.vue')
     },
-    '/login': {
-      name: 'login',
-      component: require('./components/Login/index.vue')
+    'bar': {
+      name: 'bar',
+      component: require('./components/Bar.vue')
     },
-    '/settings': {
-      name: 'settings',
-      component: require('./components/Settings/index.vue')
-    },
-    '/article/:aid':{
-      name: 'article',
-      component: require('./components/Article/index.vue')
-    },
-    '/apps': {
-      name: 'apps',
-      component: require('./components/Apps/index.vue')
+    'kenko': {
+      name: 'kenko',
+      component: require('./components/kenko.vue')
     },
     '*': {
       component: require('./components/NotFound.vue')
