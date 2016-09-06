@@ -1,6 +1,6 @@
-# y
+# first-vue
 
-> y
+> vue+vue-router+vue-resource+vuex
 
 ## Build Setup
 
