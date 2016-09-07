@@ -1,26 +1,26 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
+    <a @click="kicks">{{ msg }}</a>
   </div>
 </template>
 
 <script>
-export default {
-  data () {
-    return {
-      // note: changing this line won't causes changes
-      // with hot-reload because the reloaded component
-      // preserves its current state and we are modifying
-      // its initial state.
-      msg: 'Hello bar!'
+  import {kick} from '../vuex/actions'
+  import {getMsg} from '../vuex/getters'
+  export default {
+    vuex: {
+      actions: {
+        kicks: kick
+      },
+      getters: {
+        msg: getMsg
+      }
     }
   }
-}
 </script>
-
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1 {
-  color: #42b983;
-}
+  h1 {
+    color: #42b983;
+  }
 </style>
