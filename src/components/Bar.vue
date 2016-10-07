@@ -5,17 +5,12 @@
 </template>
 
 <script>
-  import {kick} from '../vuex/actions'
-  import {getMsg} from '../vuex/getters'
+  import {mapGetters,mapActions} from 'vuex'
   export default {
-    vuex: {
-      actions: {
-        kicks: kick
-      },
-      getters: {
-        msg: getMsg
-      }
-    }
+    computed:mapGetters({
+      msg:'getMsg'
+    }),
+    methods:mapActions({kicks:'kick'})
   }
 </script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->

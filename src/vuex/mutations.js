@@ -4,8 +4,7 @@
 // 创建一个对象存储一系列我们接下来要写的 mutation 函数
 export default {
   // TODO: 放置我们的状态变更函数
-  kick (state, msg) {
-    console.log(msg)
-    state.msg = msg
+  kick (state) {
+    state.msg++;
   }
 }

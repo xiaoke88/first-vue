@@ -7,8 +7,8 @@
     </p>
     <p>
       <!-- 使用指令 v-link 进行导航。 -->
-      <router-link to="{ path: '/bar' }">Go to bar</router-link>
-      <router-link to="{ path: '/kenko' }">Go to kenko</router-link>
+      <router-link to="/bar">Go to bar</router-link>
+      <router-link to="/kenko">Go to kenko</router-link>
     </p>
     <router-view></router-view>
     <p>
@@ -30,12 +30,10 @@
 
 <script>
 import Hello from './components/Hello'
-import store from './vuex/store'
 export default {
   components: {
     Hello
-  },
-  store
+  }
 }
 </script>
 
