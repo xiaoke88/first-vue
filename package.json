@@ -1,8 +1,8 @@
 {
   "name": "y",
   "version": "1.0.0",
-  "description": "y",
-  "author": "y",
+  "description": "vuex+vue2.0+vue-router",
+  "author": "xk_xiaoke@163.com",
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",
