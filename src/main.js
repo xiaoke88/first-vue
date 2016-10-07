@@ -8,6 +8,5 @@ var router = new VueRouter()
 
 routersCombine(router)
 
-router.start(Vue.extend(App), '#app')
+App.$mount('#app');
 
-window.router = router

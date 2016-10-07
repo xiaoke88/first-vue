@@ -1,5 +1,5 @@
 export default function (router) {
-  router.map({
+  routes:[{
     '/': {
       name: 'home',
       component: require('./components/Hello.vue')
@@ -15,8 +15,5 @@ export default function (router) {
     '*': {
       component: require('./components/NotFound.vue')
     }
-  })
-  // router.beforeEach((transition)=>{
-  //   transition.next()
-  // })
+  }]
 }
