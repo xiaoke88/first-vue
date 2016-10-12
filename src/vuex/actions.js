@@ -9,5 +9,5 @@
   store.dispatch('kick',{msg:'mi4'})
 }*/
 export const kick = function ({commit}) {
-  commit('kick');
+  commit('kick',{amount:10},{silent:true});
 }

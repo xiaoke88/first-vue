@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
+    <h1 @click="change">{{ msg }}</h1>
   </div>
 </template>
 
@@ -14,7 +14,13 @@ export default {
       // its initial state.
       msg: 'Hello World!'
     }
+  },
+  methods:{
+    change:function () {
+        this.msg='hello fuck';
+    }
   }
+
 }
 </script>
 

@@ -10,7 +10,9 @@
     computed:mapGetters({
       msg:'getMsg'
     }),
-    methods:mapActions({kicks:'kick'})
+    methods:mapActions({
+      kicks:'kick'
+    })
   }
 </script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
